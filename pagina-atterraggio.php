@@ -8,7 +8,6 @@ $password = $_GET['password'];
 ?>
 
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,12 +29,8 @@ $password = $_GET['password'];
       <div class="left-form-get">
         <div class="box">
           <h2>
-            Inserisci i tuoi dati e scopri cosa può fare PHP!
-          </h2>
-
-          <h4>
             Come ti avevo promesso ecco i tuoi dati!
-          </h4>
+          </h2>
 
           <p>
             Il tuo nome è: <?php $nome ?> mentre il tuo cognome è: <?php $cognome ?>.
