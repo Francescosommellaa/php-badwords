@@ -15,7 +15,7 @@ $password = $_GET['password'];
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pagina atterraggio GET</title>
+  <title>Risultato</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -24,7 +24,7 @@ $password = $_GET['password'];
 
   <div class="container">
 
-    <h1>FORM GET</h1>
+    <h1>RISULTATO</h1>
 
     <div class="container-form">
       <div class="left-form-get">
@@ -39,8 +39,14 @@ $password = $_GET['password'];
 
           <p>
             Il tuo nome è: <?php $nome ?> mentre il tuo cognome è: <?php $cognome ?>.
-            La tua e-mail è: <?php $email ?> e infine la tua password : <?php $password ?> scherzo non rivelerei mai la tua password.
-            Forse sei in mani sicure!
+            La tua e-mail è: <?php $email ?> ed infine la tua password: <?php $password ?> scherzo non rivelerei mai la tua password.
+            <br>Forse sei in mani sicure!
+          </p>
+
+          <p>
+            Infatti ecco qui puoi vedere anche la tua password <br>
+            Il tuo nome è: <?php $nome ?> mentre il tuo cognome è: <?php $cognome ?>.
+            La tua e-mail è: <?php $email ?> ed infine la tua password: <?php $password ?>.
           </p>
         </div>
       </div>
