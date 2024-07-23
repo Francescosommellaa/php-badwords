@@ -5,6 +5,10 @@ $cognome = $_GET['cognome'];
 $email = $_GET['email'];
 $password = $_GET['password'];
 
+$text = 'Lorem ipsum dolor sit amet ciao consectetur adipisicing elit. Magnam, quod porro sint sequi ab et, ipsam consequuntur fugiat animi accusamus, provident repudiandae sapiente ciao tenetur dolor eveniet dolorum! Aut, explicabo exercitationem!';
+
+$lunghezza_testo_originale = strlen($text);
+
 ?>
 
 
@@ -32,17 +36,15 @@ $password = $_GET['password'];
             Come ti avevo promesso ecco i tuoi dati!
           </h2>
 
+          <h3>Qui puoi trovare i dati che hai inserito</h3>
           <p>
-            Il tuo nome è: <?php $nome ?> mentre il tuo cognome è: <?php $cognome ?>.
-            La tua e-mail è: <?php $email ?> ed infine la tua password: <?php $password ?> scherzo non rivelerei mai la tua password.
-            <br>Forse sei in mani sicure!
+            Il tuo nome è: <?php echo  $nome ?> mentre il tuo cognome è: <?php echo  $cognome ?>.
+            La tua e-mail è: <?php echo  $email ?> ed infine la tua password: <?php echo  $password ?>.
           </p>
 
-          <p>
-            Infatti ecco qui puoi vedere anche la tua password <br>
-            Il tuo nome è: <?php $nome ?> mentre il tuo cognome è: <?php $cognome ?>.
-            La tua e-mail è: <?php $email ?> ed infine la tua password: <?php $password ?>.
-          </p>
+          <p><?php echo $text ?></p>
+          <strong>Questo testo ha <?php echo $lunghezza_testo_originale ?> caratteri</strong>
+
         </div>
       </div>
 
