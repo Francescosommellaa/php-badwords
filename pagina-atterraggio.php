@@ -31,21 +31,18 @@ $lunghezza_testo_originale = strlen($text);
 
     <div class="container-form">
       <div class="left-form-get">
-        <div class="box">
-          <h2>
-            Come ti avevo promesso ecco i tuoi dati!
-          </h2>
+        <h2>
+          Come ti avevo promesso ecco i tuoi dati!
+        </h2>
+        <h4>Qui puoi trovare i dati che hai inserito</h4>
+        <p>
+          Il tuo nome è: <?php echo  $nome ?> mentre il tuo cognome è: <?php echo  $cognome ?>.
+          La tua e-mail è: <?php echo  $email ?> ed infine la tua password: <?php echo  $password ?>.
+        </p>
 
-          <h3>Qui puoi trovare i dati che hai inserito</h3>
-          <p>
-            Il tuo nome è: <?php echo  $nome ?> mentre il tuo cognome è: <?php echo  $cognome ?>.
-            La tua e-mail è: <?php echo  $email ?> ed infine la tua password: <?php echo  $password ?>.
-          </p>
-
-          <p><?php echo $text ?></p>
-          <strong>Questo testo ha <?php echo $lunghezza_testo_originale ?> caratteri</strong>
-
-        </div>
+        <h5>Questo è un paragrafo dinamico e in fondo puoi notare che ho fatto in modo aparissero il numero di caratteri al suo interno</h5>
+        <p><?php echo $text ?></p>
+        <strong>Questo testo ha <?php echo $lunghezza_testo_originale ?> caratteri</strong>
       </div>
 
     </div>
